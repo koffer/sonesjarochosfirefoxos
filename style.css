@@ -50,7 +50,7 @@ h4 {
 p {
 
     font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.02em;;
   
 
 }
@@ -71,4 +71,36 @@ p {
 	background:white;
 	padding:5px 5px 5px 10px;
 	height: 100% !important;
+}
+
+.ui-collapsible-content-collapsed {
+display: none;
+}
+
+.ui-collapsible-heading-status {
+display: none;
+}
+
+.ui-collapsible-content  {
+ font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    padding:5px;
+    background:white;
+    height: 100% !important;
+}
+
+
+a:link, a:visited {
+color: -webkit-link;
+text-decoration: none;
+cursor: auto;
+    
+    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+font-size: 1em;
+color: white;
+}
+
+a:hover {
+
+color: yellow;
 }

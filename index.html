@@ -3,22 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>Mi libro de sones jarochos</title>
-<!--   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
-  <script src="jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!--   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> 
+  <script src="jquery-1.10.2.js"></script>-->
+ <!--  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+    
+     <script src="jquery-1.10.2.js"></script>
+  <script src="jquery.mobile-1.4.2.min.js"></script>
+    
   <link rel="stylesheet" href="style.css"> 
-  <script>
+    
+ <!-- <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">  -->
+    
+ <!--   <script>
   $(function() {
     $( ".accordion" ).accordion();
   });
-  </script>
+  </script>-->
     
 </head>
 <body>
     
      <img src="img/tarima.png" width="310" height="310" alt="La tarima">
     
-     <h1>Mi libro de sones jarochos</h1>
+     <h1>Mi libro de <br>sones jarochos</h1>
 
    
 
@@ -26,17 +33,15 @@
      <div class="tipo">Sones de pareja</div>
     
     
-<div class="accordion">
-    
-      <h3 class="accordion">Introducción</h3>
-     <div class="intro">
-    
-        <p> Este es un pequeño documento que sirve para tener a la mano los versos de algunos Sones jarochos y poder practicarlos en clase de jarana.
+<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible" >
+          <h3 >Introducción</h3>
+         <p> Este es un pequeño documento que sirve para tener a la mano los versos de algunos Sones jarochos y poder practicarlos en clase de jarana.
     No pretende tener todos los versos de cada Son, lo que resultaría imposible; simplemente se retoman algunos versos vistos en clase y otros añadidos de un PDF itulado Versos para Sones & Congas Jarochos del Seattle Fandango Project que a su vez retoma versos de el libro Versos para (más de) 100 Sones Jarochos de De la Cruz, Meléndez. 2004. hecho en Minatitlán, Mexico. </p>
-    
     </div>
-  
-  <h3>La bamba</h3>
+    
+    <div data-role="collapsible">
+         <h3>La bamba</h3>
   <div class="bamba seccion">
     <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la Bamba">
       
@@ -229,14 +234,17 @@ Ya cantamos la bamba <br>
 Venga otra son.<br><br><br>
     </p>
       
-  </div>
-    
-   
-  <h3>El Buscapiés</h3>
-<div class="Buscapies seccion">
-    
+    </div>  
+</div>
+        
+<div data-role="collapsible">
+        
+        
+        
+      <h3>El Buscapiés</h3>
+      <div class="buscapies seccion">
      <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la Bamba">
-  <p>Bonito es el buscapiés  <br>
+     <p>Bonito es el buscapiés  <br>
       Que alegra los corazones  <br>
       Quien lo oye una sola vez  <br>
       Lo dice sin discusiones  <br>
@@ -345,8 +353,22 @@ Venga otra son.<br><br><br>
       Que soporto Jesús Santo <br>
       Gloria al Padre, gloria al Hijo <br>
       Gloria al Espíritu Santo.<br><br></p>
-  </div>
+  
+        
+         </div>
+        
+        
+    </div>
+        
+        
+</div>
     
+   Termina la parte de mobile
+    
+<div class="accordion">
+    
+    
+
     
     <h3>El Ahualuco</h3>
 <div class="Ahualuco seccion">
@@ -629,7 +651,7 @@ Venga otra son.<br><br><br>
          Al final le sale el vuelo <br>
          El amor es de María <br>
          El final es un anhelo <br>
-         Que no llega todavía.  <br>
+         Que no llega todavía.  <br><br>
           
          Guacamaya si te fuiste <br>
          Regresa pronto a tu nido <br>
