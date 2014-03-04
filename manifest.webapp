@@ -1,0 +1,13 @@
+{
+  "name": "Sones jarochos",
+  "description": "Una app con letras de sones jarochos",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Ivan mejia",
+    "url": "http://www.medioyforma.info"
+  },
+  "default_locale": "es"
+}

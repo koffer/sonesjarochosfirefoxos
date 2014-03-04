@@ -1,0 +1,74 @@
+body {
+
+    font-family: Georgia, serif;
+    background:#b02130;
+
+}
+
+/* Basic  */
+
+h1 {
+
+    font-family: Georgia, serif;
+    font-size: 2.3em;
+    color:white;
+
+}
+
+h2 {
+
+    font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    color:white;
+    
+}
+
+h3 {
+
+    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color:white;
+
+}
+
+h4 {
+
+    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+    font-size: 1.4em;
+   
+
+}
+
+.accordion .intro {
+    font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    padding:5px;
+    background:white;
+    height: 100% !important;
+}
+
+p {
+
+    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+    font-size: 1.2em;
+  
+
+}
+
+.tipo {
+
+    font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color:white;
+    background:#b9303e;
+    padding:5px;
+}
+
+/* Acordion style   */
+
+.accordion .seccion {
+	
+	background:white;
+	padding:5px 5px 5px 10px;
+	height: 100% !important;
+}
