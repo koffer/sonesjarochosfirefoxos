@@ -104,3 +104,9 @@ a:hover {
 
 color: yellow;
 }
+
+.ui-loader-default {
+    
+    
+    display: none;
+}
