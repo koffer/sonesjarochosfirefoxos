@@ -1,7 +1,7 @@
 body {
 
     font-family: Georgia, serif;
-    background:#b02130;
+    background:#b02130 url('img/tarima.png') top center no-repeat;
 
 }
 
@@ -12,6 +12,7 @@ h1 {
     font-family: Georgia, serif;
     font-size: 2.3em;
     color:white;
+    margin: 325px 0 10px 0;
 
 }
 
@@ -34,10 +35,39 @@ h3 {
 h4 {
 
     font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
-    font-size: 1.4em;
-   
+    font-size: 1.2em;
+    padding:0;
+    margin:0;
 
 }
+
+p {
+
+    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+    font-size: 1.02em;;
+    padding: 5px;
+
+}
+
+
+/* Links */
+
+a:link, a:visited {
+color: -webkit-link;
+text-decoration: none;
+cursor: auto;
+    
+    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+font-size: 1em;
+color: white;
+}
+
+a:hover {
+
+color: yellow;
+}
+
+/* Accordion */
 
 .accordion .intro {
     font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
@@ -47,13 +77,6 @@ h4 {
     height: 100% !important;
 }
 
-p {
-
-    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
-    font-size: 1.02em;;
-  
-
-}
 
 .tipo {
 
@@ -84,29 +107,161 @@ display: none;
 .ui-collapsible-content  {
  font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
     font-size: 1.3em;
-    padding:5px;
+    padding:0px;
     background:white;
     height: 100% !important;
 }
 
 
-a:link, a:visited {
-color: -webkit-link;
-text-decoration: none;
-cursor: auto;
-    
-    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
-font-size: 1em;
-color: white;
-}
-
-a:hover {
-
-color: yellow;
-}
 
 .ui-loader-default {
     
     
     display: none;
+}
+
+/* Bamba  */
+
+.bamba  {
+
+    background:white url('img/bambaweb.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+/* Bamba  */
+
+.buscapies  {
+
+    background:white url('img/buscapies.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.Ahualuco  {
+
+    background:white url('img/ahualulco.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.Aguanieves  {
+
+    background:white url('img/aguanieves.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.cascabel  {
+
+    background:white url('img/cascabel.png') top center no-repeat;
+    padding: 160px 0 0 5px;
+    
+}
+
+
+.Siquisiri {
+
+    background:white url('img/siquisiri.png') top center no-repeat;
+    padding: 160px 0 0 5px;
+    
+}
+
+.manta {
+
+    background:white url('img/lamanta.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.balaju {
+
+    background:white url('img/balaju.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.morena {
+
+    background:white url('img/morena.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.guacamaya  {
+
+    background:white url('img/guacamaya.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+.guanabana {
+
+    background:white url('img/guanabana.png') top center no-repeat;
+    padding: 160px 0 5px 5px;
+    
+}
+
+
+.pajarocu  {
+
+    background:white url('img/pajarocu.png') top center no-repeat;
+    padding: 160px 0 0 5px;
+    
+}
+
+/* Regreso */
+
+div.regreso {
+    
+
+    padding:4px;
+    margin:12px 6px;
+    background:#6e343a;
+  text-align:center;
+}
+
+.regreso a:link, .regreso a:visited {
+    
+ font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    font-size: 1.1em;
+   color:white;
+  
+}
+
+.regreso a:hover {
+    
+ color:#824916;
+  
+}
+
+div.regreso:hover{
+    
+ font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    
+  color:#824916;
+  background:#65d5ef;
+  text-align:center;
+}
+
+
+
+
+/* Creditos   */
+
+.creditos {
+    
+     font-family: 'Fira Sans Medium', 'Open Sans', sans-serif;
+    font-size: 1em;
+    color:white;
+   /* background:#b9303e; */
+    padding:5px;
+}
+
+.creditos a:link, .creditos a:visited {
+    
+   
+    color:yellow;
+   /* background:#b9303e; */
+ 
 }

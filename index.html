@@ -20,21 +20,37 @@
   });
   </script>-->
     
+ <script>  
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});  </script>
+    
 </head>
 <body>
     
-     <img src="img/tarima.png" width="310" height="310" alt="La tarima">
+    <!--  <img src="img/tarima.png" width="310" height="310" alt="La tarima"> -->
     
-     <h1>Mi libro de <br>sones jarochos</h1>
+     <h1>Mi libro con <br>sones jarochos</h1>
 
    
 
     
-     <div class="tipo">Sones de pareja</div>
+     <div  id="iniciar"  class="tipo">Sones de pareja</div>
     
     
 <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-    <div data-role="collapsible" >
+    <div data-role="collapsible">
           <h3 >Introducción</h3>
          <p> Este es una aplicación que sirve para tener a la mano los versos de algunos Sones jarochos y poder practicarlos en clase de jarana.
     No pretende tener todos los versos de cada Son, lo que resultaría imposible; simplemente se retoman algunos versos vistos en clase y otros añadidos de un PDF itulado Versos para Sones & Congas Jarochos del Seattle Fandango Project que a su vez retoma versos de el libro Versos para (más de) 100 Sones Jarochos de De la Cruz, Meléndez. 2004. hecho en Minatitlán, Mexico. </p>
@@ -43,7 +59,7 @@
     <div data-role="collapsible">
          <h3>La bamba</h3>
   <div class="bamba seccion">
-    <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la Bamba">
+   <!--  <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la Bamba"> -->
       
    
 
@@ -174,66 +190,66 @@
     Venga otra son.<br><br>
     </p>
       
-<h4>Estribillo</h4> 
-      
-<p>Ay arriba y arriba<br>
-Y arriba iré<br>
-Yo no soy marinero<br>
-Por ti seré.<br><br>
-    
-Ay arriba y arriba<br>
-Y arriba iré<br>
-Repiquen las campanas <br>
-Repicaré.<br><br>
-    
-Ay arriba y arriba <br>
-Arriba y abajo <br>
-Repiquen las campanas <br>
-Con el badajo.<br><br>
-    
-Ay arriba y arriba <br>
-Ya van llegando<br>
-Como las palomitas <br>
-Que van volando.<br><br>
-    
-Ay arriba y arriba<br>
-Y arriba voy<br>
-Yo no soy marinero <br>
-Por ti lo soy.<br><br>
-    
-Ay arriba y arriba<br>
-Y arriba voy<br>
-Pase usted buena noche <br>
-Mañana y hoy.<br><br>
-    
-Que tilín, que tilín <br>
-Que tilín, tin tan <br>
-Repiquen las campanas <br>
-Repicarán.<br><br>
-    
-Que tilín, que tilín<br>
-Que tilín, tin ton <br>
-Repiquen las campanas <br>
-A la oración.<br>
-    
-Que tilín, que tilín<br>
-Que tilín, tintero <br>
-Tiene grande los ojos <br>
-La que yo quiero.<br><br>
-    
-Arriba y arriba<br>
-Y arriba llevo<br>
-Tus amores en mi alma <br>
-Como renuevo.<br><br>
-    
-Ay arriba y arriba<br>
-Y arriba iré<br>
-A los cerros más altos Te llevaré.<br>
-Rosa en botón<br>
-Ya cantamos la bamba <br>
-Venga otra son.<br><br><br>
+    <h4>Estribillo</h4> 
+
+    <p>Ay arriba y arriba<br>
+    Y arriba iré<br>
+    Yo no soy marinero<br>
+    Por ti seré.<br><br>
+
+    Ay arriba y arriba<br>
+    Y arriba iré<br>
+    Repiquen las campanas <br>
+    Repicaré.<br><br>
+
+    Ay arriba y arriba <br>
+    Arriba y abajo <br>
+    Repiquen las campanas <br>
+    Con el badajo.<br><br>
+
+    Ay arriba y arriba <br>
+    Ya van llegando<br>
+    Como las palomitas <br>
+    Que van volando.<br><br>
+
+    Ay arriba y arriba<br>
+    Y arriba voy<br>
+    Yo no soy marinero <br>
+    Por ti lo soy.<br><br>
+
+    Ay arriba y arriba<br>
+    Y arriba voy<br>
+    Pase usted buena noche <br>
+    Mañana y hoy.<br><br>
+
+    Que tilín, que tilín <br>
+    Que tilín, tin tan <br>
+    Repiquen las campanas <br>
+    Repicarán.<br><br>
+
+    Que tilín, que tilín<br>
+    Que tilín, tin ton <br>
+    Repiquen las campanas <br>
+    A la oración.<br>
+
+    Que tilín, que tilín<br>
+    Que tilín, tintero <br>
+    Tiene grande los ojos <br>
+    La que yo quiero.<br><br>
+
+    Arriba y arriba<br>
+    Y arriba llevo<br>
+    Tus amores en mi alma <br>
+    Como renuevo.<br><br>
+
+    Ay arriba y arriba<br>
+    Y arriba iré<br>
+    A los cerros más altos Te llevaré.<br>
+    Rosa en botón<br>
+    Ya cantamos la bamba <br>
+    Venga otra son.<br><br><br>
     </p>
-      
+      <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
     </div>  
 </div>
         
@@ -243,7 +259,7 @@ Venga otra son.<br><br><br>
         
       <h3>El Buscapiés</h3>
       <div class="buscapies seccion">
-     <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la Bamba">
+  
      <p>Bonito es el buscapiés  <br>
       Que alegra los corazones  <br>
       Quien lo oye una sola vez  <br>
@@ -354,7 +370,7 @@ Venga otra son.<br><br><br>
       Gloria al Padre, gloria al Hijo <br>
       Gloria al Espíritu Santo.<br><br></p>
   
-        
+        <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
          </div>
         
         
@@ -366,8 +382,7 @@ Venga otra son.<br><br><br>
           
       <h3>El Ahualuco</h3>
         <div class="Ahualuco seccion">
-    
-            <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen del Ahualuco">
+
  
             <p>
         
@@ -445,6 +460,7 @@ Venga otra son.<br><br><br>
           Como dicen que lo cantan y lo bailan <br>
           Las mujeres bailadoras de mi tierra.<br><br></p>
       
+            <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
         </div>
         
     </div>
@@ -458,9 +474,7 @@ Venga otra son.<br><br><br>
           <h3>El Aguanieves</h3>
     
     <div class="Aguanieves seccion">
-    
-     <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen del Aguanieves">
- 
+  
         <h4>Versada</h4>
     
         <p>Les voy a cantar en breve<br>
@@ -515,6 +529,8 @@ Venga otra son.<br><br><br>
             Mirando pa&#8217; la cocina.<br><br>
         
         </p>
+        
+        <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
       </div>  
       </div>
     
@@ -528,9 +544,6 @@ Venga otra son.<br><br><br>
            <h3>El Siquisirí</h3>
     
     <div class="Siquisiri seccion">
-    
-      <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen del Aguanieves">
- 
 
             <p>
              Señores pido licencia <br>
@@ -618,6 +631,7 @@ Venga otra son.<br><br><br>
             Contigo me quedaré.<br><br>
             </p>
         
+            <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
         </div>
           
       </div>    
@@ -625,7 +639,7 @@ Venga otra son.<br><br><br>
        <div data-role="collapsible">
            <h3>La Guacamaya</h3>
         <div class="guacamaya seccion"> 
-          <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la guacamaya">
+          
    
            <H4>Versada</H4>
               <p>Pobrecita guacamaya  <br>
@@ -724,6 +738,7 @@ Venga otra son.<br><br><br>
                 Sentirás lo que te doy.<br><br>
             </p>
                   
+            <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
            </div>
  
         </div> 
@@ -734,7 +749,7 @@ Venga otra son.<br><br><br>
           <H3>El Cascabel</H3>
             
             <div class="cascabel seccion">
-          <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la guacamaya">
+         
    
           <h4>Versada</h4>
                 <p>Bonito es el cascabel  <br>
@@ -828,6 +843,8 @@ Venga otra son.<br><br><br>
                     No llegan a su destino.<br><br>
                 
                 </p>
+                
+                <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
            </div>        
                 
                 
@@ -836,8 +853,7 @@ Venga otra son.<br><br><br>
       <div data-role="collapsible">
           <H3>La Guanábana</H3>
             <div class="guanabana seccion">
-          <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la guacamaya">
-   
+      
           <h4>Versada</h4>
           <p> La guanábana imperial <br>
               Es una fruta tan suave <br>
@@ -879,14 +895,14 @@ Venga otra son.<br><br><br>
                 
             </p>
                 
+                <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
             </div>     
       </div> 
           
       <div data-role="collapsible">
           <h3>La manta</h3>
           <div class="manta seccion">
-          <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la guacamaya">
-   
+         
           <h4>Versada</h4>
          <p> Ay para bordar la manta <br>
              Se necesita, se necesita <br>
@@ -975,6 +991,8 @@ Venga otra son.<br><br><br>
                 Que estoy tocando.<br> <br> 
               
               </p>
+              
+                <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
               </div> 
               
       </div> 
@@ -983,8 +1001,7 @@ Venga otra son.<br><br><br>
       <div data-role="collapsible">
           <h3>El Balajú</h3>
             <div class="balaju seccion">
-          <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la guacamaya">
-   
+    
           
          <h4>Versada</h4>
                 <p> No te trabes lengua mía <br> 
@@ -1133,6 +1150,9 @@ Venga otra son.<br><br><br>
                     Ariles porque me voy <br>
                     Pase usted buena noche <br>
                     Mañana y hoy.<br><br></p>
+                
+                
+                 <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
                 </div> 
                 
       </div> 
@@ -1141,8 +1161,7 @@ Venga otra son.<br><br><br>
              <h3>La Morena</h3>
           
            <div class="morena seccion">
-          <img src="img/bambafox.jpg" width="295" height="71" alt="Imagen de la guacamaya">
-   
+       
           <h4>Versada</h4>
                <p> Hace días que no cantaba <br>
                    Porque gusto no tenía <br>
@@ -1253,9 +1272,229 @@ Venga otra son.<br><br><br>
                    una mujer de este mundo <br>
                    la vida me esta faltando<br>
                </p>
+               
+                    <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
+               
+                </div> 
       </div> 
     
      <div data-role="collapsible">
+         
+           <h3>El pájaro cu</h3>
+          
+           <div class="pajarocu seccion">
+         
+          <H4>Versada</H4>
+              <p>   Pajarito eres bonito Y de bonito color <br>
+                  Pero más bonito fueras <br>
+                  Si me hicieras el favor <br>
+                  De llevar un papelito <br>
+                  A la dueña de mi amor. <br><br><br>
+                  
+                  El pájaro siempre canta <br>
+                  Cuando está formando el nido <br>
+                  El que ama sin esperanza <br>
+                  Tiene su tiempo perdido <br>
+                  Yo lo digo con confianza  <br>
+                  Porque a mí me ha sucedido. <br><br>
+                  
+                  Pajarito que volando <br>
+                  Saltas al aire ligero <br>
+                  Aquí te estoy esperando <br>
+                  Tú serás el mensajero <br>
+                  Del bien que estoy adorando. <br><br>
+                  
+                  Entré a tu jardín lucido <br>
+                  Y un verde limón corté <br>
+                  Te lo digo en entendido <br>
+                  Que donde el pájaro ve  <br>
+                  Muy cerca tiene su nido.  <br><br>
+                  
+                  El pájaro que es marino  <br>
+                  Tiene amarillo el copete <br>
+                  Y yo como amante fino <br>
+                  Antes que me digan vete  <br>
+                  Solito agarro el camino. <br><br>
+                  
+                  En la orillas del mar <br>
+                  Triste cantaba un jilguero  <br>
+                  Y en su modo de gorjear  <br>
+                  Me decía muy lastimero <br>
+                  No te dejes engañar<br>
+                  Por un amor traicionero. <br><br>
+                  
+                  
+                  Me reviento la garganta <br>
+                  Para decir lo que siento <br>
+                  Si el grito se me quebranta <br>
+                  Es que traigo un mal momento <br>
+                  Que el pájaro cuando canta <br>
+                  No siempre canta contento. <br><br>
+                  
+                  Un pájaro colorado <br>
+                  Le dijo a otro de color<br>
+                  Mi alma si soy de tu agrado<br>
+                  Respóndeme con valor <br>
+                  No me hagas andar sufriendo<br>
+                  Y penando por tu amor.  <br><br>
+                  
+                  Estando yo imaginando <br>
+                  Cómo haría para quererte <br>
+                  Pasó un pájaro volando  <br>
+                  Y me dijo que mi suerte <br>
+                  Era para andar penando <br>
+                  Y suspirando por verte. <br><br>
+                  
+                  Una calandria voló<br>
+                  Para los campos floridos <br>
+                  Cuando a su nido llegó <br>
+                  Seguido lanzó un suspiro<br>
+                  Como los que pego yo <br>
+                  En el día que no te miro.<br><br>
+                  
+                  Señores no sé cantar<br>
+                  Porque fui criado en el monte <br>
+                  A mí me enseñó a gorjear<br>
+                  La calandria y el cenzontle <br>
+                  Y el pájaro cardenal. <br><br>
+                  
+                  Pájaro lagunero <br>
+                  De la laguna del bosque <br>
+                  Anda dile a mi lucero<br>
+                  Que si ya no me conoce <br>
+                  Que yo fui su amor primero.<br><br>
+                  
+                  El pájaro cú se va<br>
+                  Porque la virgüela viene <br>
+                  El consuelo que me da <br>
+                  Que un tiempo con otro viene <br>
+                  Y él donde quiera se está. <br><br>
+                  
+                  Pájaro Cú placentero <br>
+                  De matizados colores<br>
+                  Dile al ángel que yo no quiero<br>
+                  Que reciba mis amores <br>
+                  Que por amarle me muero. <br><br>
+                  
+                  Una carta estoy cerrando <br>
+                  Que mañana la remito <br>
+                  Pero me estoy acordando <br>
+                  Que la lleva en su piquito <br>
+                  Una calandria volando.<br><br>
+                  
+                  Pájaro qué vas a hacer <br>
+                  Que en el pico llevas hilo <br>
+                  Lo llevo para coser <br>
+                  Este corazón herido <br>
+                  Cansado de padecer. <br><br>
+                  
+                  Pajarillo del sureste <br>
+                  Que vuela sin descansar <br>
+                  Anda dile a mi celeste <br>
+                  Que me la voy a llevar <br>
+                  Aunque la vida me cueste. <br><br>  </p>
+               
+            <H4>Estribillo</H4>
+               <p> Eres mi prenda querida <br>
+                   Como te lo he dicho siempre  <br>
+                   Tú serás mi consentida <br>
+                   Si tu amor no se arrepiente. <br><br>
+                   
+                   Eres mi prenda querida <br>
+                   Y mi paloma blanca <br>
+                   Eres aquella paloma <br>
+                   Que de madrugada canta.<br><br>
+                   
+                   Eres mi paloma blanca <br>
+                   Y yo tu pichón azul<br>
+                   Arrima acá tu piquito <br>
+                   Y haremos currucucú.<br><br>
+                   
+                   Eres mi prenda querida <br>
+                   Y yo tu pichón celeste <br>
+                   Arrima acá tu boquita <br>
+                   Aunque la vida me cueste. <br><br>
+                   
+                   Eres mi prenda querida <br>
+                   Eres mi prenda adorada <br>
+                   Eres aquella paloma <br>
+                   Que canta en la madrugada. <br><br>
+                   
+                   Eres mi prenda querida <br>
+                   Y yo que le voy a hacer <br>
+                   Eres aquella paloma<br>
+                   Por quien he de padecer. <br><br>
+                   
+                   Eres mi prenda querida <br>
+                   Como te lo dije ayer <br>
+                   Y yo por ti doy la vida <br>
+                   Encantadora mujer. <br><br>
+                   
+                   Eres mi prenda querida <br>
+                   Mi prenda querida eres<br>
+                   La adoración de los hombres<br>
+                   Son las benditas mujeres.<br><br>
+                   
+                   Y eres mi prenda querida <br>
+                   Y mi gardenia de botón <br>
+                   Que es la vida de mi vida<br>
+                   Y es todita mi ilusión. <br><br>
+                   
+                   <strong>Segunda Parte </strong> <br><br>
+                   
+                   Desde que tú te fuiste<br>
+                   No he visto flores <br>
+                   Ni los pájaros cantan <br>
+                   Ni el agua corre. <br><br>
+                   
+                   Cómo quieres que tenga<br>
+                   Buenos colores<br>
+                   Si me los has quitado <br>
+                   Con tus amores. <br><br>
+                   
+                   Dices que no me quieres  <br>
+                   Y me has querido <br>
+                   Ya remedio no tiene <br>
+                   Lo sucedido. <br><br>
+                   
+                   Ay de todos los colores<br>
+                   En de mi vida me gusta verde<br>
+                   Porque las esperanzas <br>
+                   Nunca se pierden.  <br><br>
+                   
+                   Cuando salgas a misa  <br>
+                   Dios me perdone<br>
+                   Ve poniendo cuidado <br>
+                   Donde te pones.<br><br>
+                   
+                   Corazón no estés triste <br>
+                   Ten esperanza <br>
+                   Que en el pozo más hondo <br>
+                   El agua se alcanza.<br><br>
+                   
+                   Escríbeme seguido<br>
+                   No me atormentes<br>
+                   Que la carta es alivio<br>
+                   De él que anda ausente. <br><br>
+                   
+                   De qué te adoro mucho <br>
+                   Tú ya lo sabes <br>
+                   Como se aman las flores <br>
+                   Como las aves.<br><br>
+                   
+                   Calandria de amores  <br>
+                   Pájarito cú<br>
+                   Vuela como el viento  <br>
+                   La voz y la luz. <br><br>
+               </p>
+               
+               <div class="regreso" ><a href="#iniciar">Regresar</a>  </div>
+               
+           </div>   
+      </div> 
+          
+          
+          <div data-role="collapsible">
           
       </div> 
         
@@ -1263,9 +1502,14 @@ Venga otra son.<br><br><br>
     
     
     
-    <div class="creditos"> creditos  </div>  
+    <div class="creditos">
+    
+    Desarrollado por <br><a href="http://medioyforma.info/app-sones-jarochos" target="_blank">Medio y forma estudio </a><br><br>
+      <a href="mailto:contacto@medioyforma.info">Escríbenos</a> <br> 2013<br><br><br>
+    </div>  
 
 
+               
  
  
 </body>
