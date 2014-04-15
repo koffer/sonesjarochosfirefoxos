@@ -1,6 +1,6 @@
 body {
 
-    font-family: Georgia, serif;
+     font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
     background:#b02130 url('img/tarima.png') top center no-repeat;
 
 }
@@ -43,7 +43,7 @@ h4 {
 
 p {
 
-    font-family: 'Fira Sans Bold', 'Open Sans', sans-serif;
+    font-family: 'Fira Sans', 'Open Sans', sans-serif;
     font-size: 1.02em;;
     padding: 5px;
 
@@ -265,3 +265,6 @@ div.regreso:hover{
    /* background:#b9303e; */
  
 }
+
+
+/* Busqueda  */
