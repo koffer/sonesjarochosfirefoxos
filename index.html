@@ -7,9 +7,14 @@
   <script src="jquery-1.10.2.js"></script>-->
  <!--  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
     
-     <script src="jquery-1.10.2.js"></script>
-  <script src="jquery.mobile-1.4.2.min.js"></script>
+     <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery.mobile-1.4.2.min.js"></script>
     
+ <!--    Search  -->
+
+    
+    
+  <!--    Style  -->   
   <link rel="stylesheet" href="style.css"> 
     
  <!-- <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">  -->
@@ -19,7 +24,7 @@
     $( ".accordion" ).accordion();
   });
   </script>-->
-    h
+   
  <script>  
     $(document).ready(function(){
         $('a[href^="#"]').on('click',function (e) {
@@ -37,24 +42,48 @@
     });  
 </script>
     
-  
+       <!--  Collapse --> 
+<script>  $(document).on("click", ".collapseExpand", function(){
+    var collapseAll = this.id == "btnCollapse";
+    $('#theSet [data-role="collapsible"]').collapsible("option", "collapsed", collapseAll);
+});</script>
+    
+      
+    
+
+    
     
 </head>
 <body>
     
-    <!--  <img src="img/tarima.png" width="310" height="310" alt="La tarima"> -->
+  
     
      <h1>Mi libro con <br>sones jarochos</h1>
 
  <!--  Search area -->
-<input type="text" id="search-term" />
-<input type="submit" id="search-button" value="search" />
+ 
+
+<p>
+<input id="searchBox" type="text" />
+<input type="button" id="searchButton" value="Search" />
+</p>
+
+    
+ <!--  Open / Close -->
+    
+    <div class="ui-grid-a">
+  <div class="ui-block-a"><a id="btnExpand" class="ui-btn ui-corner-all collapseExpand">Abrir todo</a>
+  </div>
+  <div class="ui-block-b"><a id="btnCollapse" class="ui-btn ui-corner-all collapseExpand">Cerrar todo</a>
+  </div>
+</div>
     
  <!--  Inicia documento -->
 
+  
     
+<div id="theSet" class="ui-collapsible-set" data-theme="a" data-content-theme="a">
     
-<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
     <div data-role="collapsible">
           <h3 >Introducción</h3>
          <p> Este es una aplicación que sirve para tener a la mano los versos de algunos Sones jarochos y poder practicarlos en clase de jarana.
